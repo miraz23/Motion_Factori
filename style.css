@@ -1,9 +1,14 @@
 body{
     background-color: #131313;
-    color: #9c9c9c;
+    color: #FFF0E9;
     font-family: "DM Sans", sans-serif;
     background-image: radial-gradient(hsla(240, 2%, 48%, .414) 1px, transparent 0);
     background-size: 50px 50px;
+}
+
+section{
+    padding: 40px 0px;
+    margin: 0px 30px;
 }
 
 a, a:hover{
@@ -71,4 +76,127 @@ nav{
 
 .nav-book button:hover{
     color: #DBFA9B;
+}
+
+
+/*----------------------------------------- header -----------------------------------------*/
+
+.banner h1{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.banner h2{
+    color: #DBFA9B;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner h3{
+    color: #9C9C9C;
+    font-size: 21px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.banner-title{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-title .static-text{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.banner-title .dynamic-text{
+    height: 130px;
+    overflow: hidden;
+}
+
+.banner-title .dynamic-text li{
+    /*For gradient color */
+    background: linear-gradient(180deg, #fff, #ffffff00);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+
+    top: 0;
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    animation: slide 8s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateY(0px);
+    }
+    13% {
+      transform: translateY(-112%);
+    }
+    26% {
+      transform: translateY(-100%);
+    }
+    39% {
+      transform: translateY(-212%);
+    }
+    52% {
+      transform: translateY(-200%);
+    }
+    65% {
+      transform: translateY(-312%);
+    }
+    78% {
+      transform: translateY(-300%);
+    }
+    91% {
+      transform: translateY(-412%);
+    }
+    to {
+      transform: translateY(-400%);
+    }
+}
+
+.banner svg{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-button{
+    gap: 20px;
+    padding: 40px;
+}
+
+.banner-button button{
+    padding:12px 24px;
+    font-size: 22px;
+    color: #FFF0E9;
+    background: #4C4D4A43;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.banner-button .view-price button, .get-started button:hover{
+    background: #FFF0E9;
+    color: #0D0D0DD9;
+}
+
+.get-started h1{
+    margin: 5px 0px 4px 0px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.get-started svg{
+    margin: 5px 0px 4px 0px;
+}
+
+.banner-button .view-price button:hover{
+    color: #FFF0E9;
+    background: #4C4D4A43;
 }
