@@ -1,18 +1,11 @@
 body{
     background-color: #131313;
-    color: #FFF0E9;
+    color: #fff;
     font-family: "DM Sans", sans-serif;
-    background-image: radial-gradient(hsla(240, 2%, 48%, .414) 1px, transparent 0);
-    background-size: 50px 50px;
-}
-
-section{
-    padding: 40px 0px;
-    margin: 0px 30px;
 }
 
 a, a:hover{
-    color: #EBE1E1;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -27,7 +20,7 @@ ul{
 header{
     margin: 24px;
     padding: 8px 16px;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 nav{
@@ -41,10 +34,11 @@ nav{
 
 .nav-button button{
     border: none;
-    color: #FFF0E9;
+    color: #fff;
     padding: 12px 16px;
     background: transparent;
     outline: none;
+    font-weight: 500;
 }
 
 .nav-button button:hover{
@@ -52,17 +46,18 @@ nav{
     padding: 12px 16px;
     border: none;
     border-radius: 5px;
+    color: #DBFA9B;
 }
 
 .nav-logo h1{
-    color: #FFF0E9;
+    color: #fff;
     font-style: italic;
     margin-left: -50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .nav-book button{
-    color: #FFF0E9;
+    color: #fff;
     font-size: 22px;
     background: #4C4D4A43;
     padding: 12px 24px;
@@ -79,12 +74,44 @@ nav{
 }
 
 
-/*----------------------------------------- header -----------------------------------------*/
+/*----------------------------------------- banner -----------------------------------------*/
+
+
+#banner{
+    height: 150vh;
+    background: url("./banner.jpg") top center;
+    background-size: cover;
+    position: relative;
+}
+
+#banner:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner{
+    position: absolute;
+    bottom: 0;
+    top: 15%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .banner h1{
     font-size: 100px;
     text-align: center;
     font-weight: bold;
+    line-height: 100px;
+    padding-top: 20px;
 }
 
 .banner h2{
@@ -98,7 +125,7 @@ nav{
     color: #9C9C9C;
     font-size: 21px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 110px;
 }
 
 .banner-title{
@@ -118,10 +145,11 @@ nav{
 
 .banner-title .dynamic-text li{
     /*For gradient color */
-    background: linear-gradient(180deg, #fff, #ffffff00);
+    /* background: linear-gradient(180deg, #fff, #ffffff00);
     background-clip: text; 
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 
+    color: #DBFA9B;
     top: 0;
     font-size: 100px;
     font-weight: bold;
@@ -160,8 +188,7 @@ nav{
 }
 
 .banner svg{
-    display: flex;
-    justify-content: center;
+    margin-top: -10px;
 }
 
 .banner-button{
@@ -172,7 +199,7 @@ nav{
 .banner-button button{
     padding:12px 24px;
     font-size: 22px;
-    color: #FFF0E9;
+    color: #fff;
     background: #4C4D4A43;
     border: none;
     outline: none;
@@ -181,22 +208,12 @@ nav{
     gap: 8px;
 }
 
-.banner-button .view-price button, .get-started button:hover{
-    background: #FFF0E9;
+.banner-button .view-price button{
+    background: #fff;
     color: #0D0D0DD9;
 }
 
-.get-started h1{
-    margin: 5px 0px 4px 0px;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.get-started svg{
-    margin: 5px 0px 4px 0px;
-}
-
-.banner-button .view-price button:hover{
-    color: #FFF0E9;
-    background: #4C4D4A43;
+.banner-button .view-price button:hover, .get-started button:hover{
+    color: #0D0D0DD9;
+    background: #DBFA9B;
 }
