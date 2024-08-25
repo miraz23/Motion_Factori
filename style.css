@@ -267,3 +267,48 @@ header.scrolled {
     border: 15px solid #4C4D4A43;
     border-radius: 5px; 
 }
+
+
+/*----------------------------------------- activity -----------------------------------------*/
+
+#activity{
+    overflow-x: hidden;
+    padding: 100px 0px;
+}
+
+.activity{
+    width: 250px;
+    height: 210px;
+    border: 1px solid #DBFA9B;
+    border-radius: 20px;
+}
+
+.activity:hover{
+    width: 260px;
+    color: #131313;
+    margin-top: 5px;
+    background-color: #DBFA9B;
+    transform: translateY(-10%);
+    box-shadow: 0 0 10px #DBFA9B;
+    transition: 0.5s ease-in-out;
+}
+
+#activity .row{
+    gap: 40px;
+    justify-content: center;
+}
+
+#activity .column{
+    gap: 40px;
+}
+
+.activity h2{
+    font-size: 25px;
+    padding: 20px 20px 0px 20px;
+}
+
+.activity p{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 20px;
+}
