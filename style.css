@@ -367,3 +367,144 @@ header.scrolled {
 .speaciality-text p{
     font-size: 22px;
 }
+
+
+/*----------------------------------------- price -----------------------------------------*/
+
+
+#price{
+    margin: 100px 0px;
+}
+
+.price-title{
+    padding: 100px;
+}
+
+.price-title h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+.price-title p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.price{
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.price-1{
+    width: 370px;
+    height: 750px;
+    margin-top:7%;
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #090909;
+}
+
+.price-2{
+    width: 370px;
+    height: 600px;
+    margin-top: 13%;
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #090909;
+}
+
+.price-3{
+    width: 370px;
+    height: 880px;
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #090909;
+}
+
+.price-recommended h2{
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -60px 0 20px 0;
+    color: #090909;
+    border-radius: 20px;
+    background: #DBFA9B;
+}
+
+.price-logo, .price-logo, .price-logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-logo h1{
+    color: #fff;
+    font-style: italic;
+    font-family: "Rock salt";
+    font-size: 25px;
+}
+
+.price-logo h2{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #2A2A28;
+}
+
+.price-dollar p{
+    font-size: 17px;
+    color: #9C9C9C;
+    padding: 10px 0 5px 0;
+}
+
+.price-dollar h1{
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.price-info p{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.price-info svg{
+    margin-right: 10px;
+}
+
+.price-buy{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.price-buy button{
+    width: 320px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #090909;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.price-buy button:hover{
+    background: #DBFA9B;
+}
