@@ -284,12 +284,9 @@ header.scrolled {
 }
 
 .activity:hover{
-    width: 260px;
     color: #131313;
-    margin-top: 5px;
     background-color: #DBFA9B;
-    transform: translateY(-10%);
-    box-shadow: 0 0 10px #DBFA9B;
+    transform: scale(1.1);
     transition: 0.5s ease-in-out;
 }
 
@@ -311,4 +308,62 @@ header.scrolled {
     font-size: 20px;
     text-align: left;
     padding: 10px 20px;
+}
+
+
+/*----------------------------------------- speaciality -----------------------------------------*/
+
+
+#speaciality{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+}
+
+.speaciality{
+    width: 380px;
+    height: 410px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.speaciality:hover{
+    border: 1px solid #DBFA9B;
+    transform: translateY(-20px);
+    transition: 0.3s ease-in-out;
+}
+
+.speaciality:hover h2{
+    color: #DBFA9B;
+}
+
+.speaciality-icon{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 100%;
+    margin: 50px 0px 0px 125px;
+}
+
+.speaciality-icon svg{
+    width: 40px;
+    height: 40px;
+}
+
+.speaciality-text{
+    padding: 40px 20px 20px 20px;
+}
+
+.speaciality-text h2{
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+.speaciality-text p{
+    font-size: 22px;
 }
