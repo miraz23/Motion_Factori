@@ -265,6 +265,96 @@ header.scrolled {
 }
 
 
+/*----------------------------------------- process -----------------------------------------*/
+
+#process{
+    margin: 100px 0 100px 0;
+}
+
+.process-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 36px;
+}
+
+.process-title h1{
+    font-size: 60px;
+    padding: 50px 0px;
+    font-weight: bold;
+}
+
+.process-button{
+    gap: 50px;
+    display: flex;
+}
+
+.process-title button{
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 25px;
+    border-radius: 100%;
+    background: #2A2A28;
+}
+
+.process-button button:hover{
+    color: #090909;
+    background: #DBFA9B;
+    transition: 0s;
+}
+
+.process-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.process{
+    min-width: 380px;
+    min-height: 470px;
+    color: #fff;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #DBFA9B;
+    background: #131313;
+}
+
+.process:not(:first-child){
+    margin-left: -3%;
+}
+
+.process:hover{
+    color: #090909;
+    background: #DBFA9B;
+}
+
+.process:hover h2{
+    border-bottom: 2px solid #090909;
+}
+
+.process-info h2{
+    width: 300px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 70px;
+    border-bottom: 2px solid #fff;
+}
+
+.process-info h1{
+    width: 300px;
+    font-size: 96px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.process-info h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
 /*----------------------------------------- activity -----------------------------------------*/
 
 #activity{
@@ -394,16 +484,6 @@ header.scrolled {
 
 .price-1{
     width: 370px;
-    height: 750px;
-    margin-top:7%;
-    padding: 40px;
-    border: 1px solid #fff;
-    border-radius: 30px;
-    background-color: #090909;
-}
-
-.price-2{
-    width: 370px;
     height: 600px;
     margin-top: 13%;
     padding: 40px;
@@ -412,9 +492,19 @@ header.scrolled {
     background-color: #090909;
 }
 
-.price-3{
+.price-2{
     width: 370px;
     height: 880px;
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #090909;
+}
+
+.price-3{
+    width: 370px;
+    height: 750px;
+    margin-top:7%;
     padding: 40px;
     border: 1px solid #fff;
     border-radius: 30px;
