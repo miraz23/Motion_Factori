@@ -253,7 +253,7 @@ header.scrolled {
 
 .about-info{
     color: #9C9C9C;
-    font-size: 19px;
+    font-size: 23px;
     padding: 40px 40px 0 0;
 }
 
@@ -262,6 +262,88 @@ header.scrolled {
     border-radius: 5px; 
 }
 
+
+/*----------------------------------------- strategy -----------------------------------------*/
+
+#strategy {
+    margin: 100px 36px 100px 36px;
+}
+
+.strategy-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 36px;
+}
+
+.strategy-title h1 {
+    font-size: 60px;
+    padding: 50px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.strategy-button {
+    gap: 50px;
+    display: flex;
+}
+
+.strategy-title button {
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 30px;
+    border-radius: 100%;
+    background: #2A2A28;
+}
+
+.strategy-button button:hover {
+    color: #090909;
+    background: #DBFA9B;
+    transition: 0.4s ease-in-out;
+}
+
+.strategy-row {
+    position: relative;
+    height: 400px;
+}
+
+.strategy {
+    position: absolute;
+    width: 50%;
+    height: 350px;
+    color: #090909;
+    padding: 40px 50px;
+    border-radius: 25px;
+    transition: transform 0.5s ease-in-out;
+    background-color: #f4f4f2;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.4));
+}
+
+.strategy-info h1 {
+    padding: 20px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.strategy-info p {
+    font-size: 18px;
+}
+
+.strategy-row .strategy-1,
+.strategy-4 {
+    background-color: #DBFA9B;
+}
+
+.strategy-row .strategy-2,
+.strategy-5 {
+    background-color: #CEDCFF;
+}
+
+.strategy-row .strategy-3,
+.strategy-6 {
+    background-color: #f4f4f2;
+}
 
 /*----------------------------------------- process -----------------------------------------*/
 

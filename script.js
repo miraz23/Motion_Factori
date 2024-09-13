@@ -101,3 +101,32 @@ document.querySelectorAll('.process').forEach((item, index) => {
         h3.style.display = '';
     });
 });
+
+
+/*----------------------------------------- strategy -----------------------------------------*/
+const strategies = Array.from(document.querySelectorAll('.strategy'));
+const prevButton = document.querySelector('.strategy-button-prev');
+const nextButton = document.querySelector('.strategy-button-next');
+
+let currentIndex = 0;
+
+function updateStrategyPosition() {
+    strategies.forEach((strategy, index) => {
+        const offset = ((index - currentIndex + strategies.length) % strategies.length) * 130;
+        const zIndex = strategies.length - Math.abs((index - currentIndex + strategies.length) % strategies.length);
+        strategy.style.transform = `translateX(${offset}px)`;
+        strategy.style.zIndex = zIndex;
+    });
+}
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % strategies.length;
+    updateStrategyPosition();
+});
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + strategies.length) % strategies.length;
+    updateStrategyPosition();
+});
+
+updateStrategyPosition();
