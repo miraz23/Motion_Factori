@@ -27,12 +27,14 @@ span{
 
 
 header{
-    padding: 12px 24px;
+    padding: 12px 40px;
     font-size: 18px;
 }
 
 nav{
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav-button ul{
@@ -57,18 +59,11 @@ nav{
     color: #DBFA9B;
 }
 
-.nav-logo h1{
-    color: #fff;
-    font-style: italic;
-    margin-left: -50px;
-    font-family: "Rock salt";
-    font-size: 30px;
-}
-
 .nav-book button{
-    color: #fff;
+    color: #090909;
     font-size: 22px;
-    background: #4C4D4A43;
+    font-weight: 500;
+    background: #DBFA9B;
     padding: 12px 24px;
     border: none;
     border-radius: 10px;
@@ -79,7 +74,7 @@ nav{
 }
 
 .nav-book button:hover{
-    color: #DBFA9B;
+    transform: scale(1.01);
 }
 
 header.scrolled {
@@ -246,11 +241,14 @@ header.scrolled {
 }
 
 .about-title h1{
-    color: #DBFA9B;
-    font-size: 70px;
+    font-size: 60px;
     display: flex;
     font-weight: bold;
     justify-content: center;
+}
+
+.about-title span{
+    margin-left: 20px;
 }
 
 .about-info{
@@ -282,18 +280,14 @@ header.scrolled {
     font-size: 60px;
     padding: 50px 0px;
     font-weight: bold;
-}
-
-.process-button{
-    gap: 50px;
-    display: flex;
+    text-align: center;
 }
 
 .process-title button{
     color: #fff;
     border: none;
     outline: none;
-    padding: 25px;
+    padding: 30px;
     border-radius: 100%;
     background: #2A2A28;
 }
@@ -307,6 +301,8 @@ header.scrolled {
 .process-row{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    margin: 0 40px;
 }
 
 .process{
@@ -357,9 +353,21 @@ header.scrolled {
 
 /*----------------------------------------- activity -----------------------------------------*/
 
+
 #activity{
     overflow-x: hidden;
-    padding: 100px 0px;
+    padding: 80px 0px;
+}
+
+.activity-title h1{
+    font-size: 60px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.activity-title span{
+    margin-left: 20px;
 }
 
 .activity{
@@ -373,11 +381,12 @@ header.scrolled {
     color: #131313;
     background-color: #DBFA9B;
     transform: scale(1.1);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #activity .row{
     gap: 40px;
+    padding: 50px 0;
     justify-content: center;
 }
 
@@ -397,35 +406,45 @@ header.scrolled {
 }
 
 
-/*----------------------------------------- speaciality -----------------------------------------*/
+/*----------------------------------------- speciality -----------------------------------------*/
 
+.speciality-title h1{
+    font-size: 60px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
 
-#speaciality{
+.speciality-title span{
+    margin-left: 20px;
+}
+
+.speciality-row{
     gap: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 100px;
+    margin: 80px;
 }
 
-.speaciality{
+.speciality{
     width: 380px;
     height: 410px;
     border: 1px solid #fff;
     border-radius: 20px;
 }
 
-.speaciality:hover{
+.speciality:hover{
     border: 1px solid #DBFA9B;
     transform: translateY(-20px);
     transition: 0.3s ease-in-out;
 }
 
-.speaciality:hover h2{
+.speciality:hover h2{
     color: #DBFA9B;
 }
 
-.speaciality-icon{
+.speciality-icon{
     height: 90px;
     width: 90px;
     display: flex;
@@ -436,21 +455,21 @@ header.scrolled {
     margin: 50px 0px 0px 125px;
 }
 
-.speaciality-icon svg{
+.speciality-icon svg{
     width: 40px;
     height: 40px;
 }
 
-.speaciality-text{
+.speciality-text{
     padding: 40px 20px 20px 20px;
 }
 
-.speaciality-text h2{
+.speciality-text h2{
     font-size: 28px;
     padding-bottom: 20px;
 }
 
-.speaciality-text p{
+.speciality-text p{
     font-size: 22px;
 }
 
@@ -528,13 +547,6 @@ header.scrolled {
 .price-logo, .price-logo, .price-logo{
     display: flex;
     justify-content: space-between;
-}
-
-.price-logo h1{
-    color: #fff;
-    font-style: italic;
-    font-family: "Rock salt";
-    font-size: 25px;
 }
 
 .price-logo h2{
@@ -696,13 +708,6 @@ footer{
 .footer{
     text-align: center;
     padding-top: 40px;
-}
-
-.footer .footer-logo h1{
-    color: #fff;
-    font-style: italic;
-    font-family: "Rock salt";
-    font-size: 30px;
 }
 
 .footer .footer-link ul{

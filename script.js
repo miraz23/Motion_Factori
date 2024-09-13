@@ -31,7 +31,7 @@ const processNextButton = document.querySelector('.process-button-next');
 let processCurrentIndex = 0;
 
 function updateProcessPosition() {
-    const offset = processCurrentIndex * - 59;
+    const offset = processCurrentIndex * - 60;
     Process.forEach((process, index) => {
         process.style.transform = `translateX(${offset}%)`;
         process.style.transition = `0.3s ease-in-out`
