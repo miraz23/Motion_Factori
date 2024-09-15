@@ -1,11 +1,29 @@
 
 /*----------------------------------------- header -----------------------------------------*/
 
-window.addEventListener('scroll', function(){
-    const header = document.querySelector('header');
-    
-    if (window.scrollY > 0) header.classList.add('scrolled');
-    else header.classList.remove('scrolled');
+
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+        header.style.backgroundColor = '#131313';
+    } 
+    else {
+        header.style.backgroundColor = 'transparent';
+    }
+});
+
+
+const menuIcon = document.getElementById('nav-menu-icon');
+const mobileMenu = document.getElementById('nav-menu');
+const closeMenu = document.querySelector('.nav-menu-close');
+
+menuIcon.addEventListener('click', function() {
+    mobileMenu.style.display = 'block';
+});
+
+closeMenu.addEventListener('click', function() {
+    mobileMenu.style.display = 'none';
 });
 
 /*----------------------------------------- faq -----------------------------------------*/

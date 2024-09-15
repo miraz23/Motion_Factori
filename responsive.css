@@ -1,0 +1,115 @@
+@media (max-width: 768px){
+
+/*----------------------------------------- header -----------------------------------------*/
+
+header{
+    padding: 30px 30px;
+}
+
+.nav-logo img{
+    width: 150px;
+    height: 30px;
+}
+
+.nav-button{
+    display: none;
+}
+
+.nav-book{
+    display: none;
+}
+
+.nav-menu-icon{
+    display: block;
+}
+
+.nav-menu-icon svg:hover{
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 999;
+    padding: 20px;
+    transition: right 0.5 ease;
+    background-color: #131313;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu ul li {
+    padding: 16px 0;
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+}
+
+.nav-menu ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-menu button{
+    border: none;
+    color: #fff;
+    padding: 12px 16px;
+    background: transparent;
+    outline: none;
+    font-weight: 500;
+}
+
+.nav-menu ul li button:hover {
+    color: #DBFA9B;
+}
+
+.nav-menu-book button{
+    width: 100%;
+    color: #090909;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #DBFA9B;
+    padding: 12px 24px;
+    gap:8px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu-book button:hover{
+    transform: scale(1.01);
+}
+
+.nav-menu .nav-menu-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-menu .nav-menu-close:hover {
+    color: #DBFA9B;
+    transform: scale(1.05);
+}
+}
