@@ -112,4 +112,53 @@ header{
     color: #DBFA9B;
     transform: scale(1.05);
 }
+
+/*----------------------------------------- banner -----------------------------------------*/
+
+.banner{
+    top: 5%;
+}
+
+.banner h1{
+    font-size: 60px;
+    line-height: 70px;
+    margin: 0;
+}
+
+.banner-title{
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-title .static-text{
+    font-size: 60px;
+}
+
+.banner-title .dynamic-text{
+    height: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-title .dynamic-text li{
+    font-size: 60px;
+}
+
+.banner-curve {
+    margin: 20px 0 0 -50px;
+}
+
+.banner-curve svg{
+    width: 250px;
+}
+
+.banner-button{
+    font-size: 16px;
+}
+
+.banner-button svg{
+    width: 20px;
+    height: 25px;
+}
+
 }
