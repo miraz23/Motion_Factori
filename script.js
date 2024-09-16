@@ -126,6 +126,8 @@ document.querySelectorAll('.process').forEach((item, index) => {
 
 
 /*----------------------------------------- strategy -----------------------------------------*/
+
+
 const strategies = Array.from(document.querySelectorAll('.strategy'));
 const prevButton = document.querySelector('.strategy-button-prev');
 const nextButton = document.querySelector('.strategy-button-next');
@@ -133,8 +135,19 @@ const nextButton = document.querySelector('.strategy-button-next');
 let currentIndex = 0;
 
 function updateStrategyPosition() {
+
+    const screenWidth = window.innerWidth;
+    let offsetMultiplier;
+
+    if (screenWidth <= 768) {
+        offsetMultiplier = 360;
+    } 
+    else {
+        offsetMultiplier = 130;
+    }
+
     strategies.forEach((strategy, index) => {
-        const offset = ((index - currentIndex + strategies.length) % strategies.length) * 130;
+        const offset = ((index - currentIndex + strategies.length) % strategies.length) * offsetMultiplier;
         const zIndex = strategies.length - Math.abs((index - currentIndex + strategies.length) % strategies.length);
         strategy.style.transform = `translateX(${offset}px)`;
         strategy.style.zIndex = zIndex;
@@ -151,4 +164,5 @@ prevButton.addEventListener('click', () => {
     updateStrategyPosition();
 });
 
+window.addEventListener('resize', updateStrategyPosition);
 updateStrategyPosition();

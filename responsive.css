@@ -186,4 +186,40 @@ header{
     height: 150px;
 }
 
+/*----------------------------------------- strategy -----------------------------------------*/
+
+#strategy {
+    margin: 50px 0;
+}
+
+.strategy-title h1 {
+    font-size: 35px;
+    margin: 0 20px;
+}
+
+
+.strategy-title button {
+    padding: 10px;
+}
+
+.strategy-row {
+    height: 530px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.strategy {
+    width: 80%;
+    height: 100%;
+    margin: 0 40px;
+}
+
+.strategy-info h1 {
+    font-size: 20px;
+}
+
+.strategy-info p {
+    font-size: 15px;
+}
 }
