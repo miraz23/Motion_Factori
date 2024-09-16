@@ -7,12 +7,12 @@ const header = document.querySelector('header');
 window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
         header.style.backgroundColor = '#131313';
-        header.style.filter = 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.8))';
-        header.style.transition = 'background-color 0.3s ease, filter 0.3s ease';
+        header.style.boxShadow = '0 0 20px 20px rgba(0, 0, 0, 0.5)';
+        header.style.transition = 'background-color 0.2s ease, filter 0.3s ease';
     } 
     else {
         header.style.backgroundColor = 'transparent';
-        header.style.filter = 'none';
+        header.style.boxShadow = 'none';
         header.style.transition = 'background-color 0.3s ease, filter 0.3s ease';
     }
 });
@@ -51,9 +51,22 @@ const processPrevButton = document.querySelector('.process-button-prev');
 const processNextButton = document.querySelector('.process-button-next');
 
 let processCurrentIndex = 0;
+let offsetMultiplier;
+let lengthMultiplier;
 
 function updateProcessPosition() {
-    const offset = processCurrentIndex * - 60;
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 768) {
+        offsetMultiplier = 99.5;
+        lengthMultiplier = 1;
+    } 
+    else {
+        offsetMultiplier = 60;
+        lengthMultiplier = 3;
+    }
+
+    const offset = processCurrentIndex * - offsetMultiplier;
     Process.forEach((process, index) => {
         process.style.transform = `translateX(${offset}%)`;
         process.style.transition = `0.3s ease-in-out`
@@ -61,7 +74,7 @@ function updateProcessPosition() {
 }
 
 processNextButton.addEventListener('click', () => {
-    if (processCurrentIndex < Process.length - 3) {
+    if (processCurrentIndex < Process.length - lengthMultiplier) {
         processCurrentIndex++;
         updateProcessPosition();
     }
@@ -74,6 +87,7 @@ processPrevButton.addEventListener('click', () => {
     }
 });
 
+window.addEventListener('resize', updateProcessPosition);
 updateProcessPosition();
 
 

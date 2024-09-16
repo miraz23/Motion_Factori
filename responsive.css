@@ -222,4 +222,40 @@ header{
 .strategy-info p {
     font-size: 15px;
 }
+
+/*----------------------------------------- process -----------------------------------------*/
+
+#process{
+    margin: 100px 0;
+    overflow: hidden;
+}
+
+.process-title h1{
+    font-size: 35px;
+}
+
+.process-title button{
+    padding: 10px;
+}
+
+.process-row{
+    margin: 0;
+}
+
+.process{
+    min-width: 390px;
+    min-height: 470px;
+}
+
+.process-info h2{
+    font-size: 35px;
+}
+
+.process-info h1{
+    font-size: 80px;
+}
+
+.process-info h3{
+    font-size: 28px;
+}
 }
