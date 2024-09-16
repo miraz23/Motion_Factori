@@ -161,4 +161,29 @@ header{
     height: 25px;
 }
 
+/*----------------------------------------- about -----------------------------------------*/
+
+#about{
+    margin: 100px 0 50px 0;
+}
+
+.about{
+    flex-direction: column;
+}
+
+.about-title h1{
+    font-size: 35px;
+}
+
+.about-info{
+    font-size: 20px;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+.about-video iframe{
+    width: 300px;
+    height: 150px;
+}
+
 }

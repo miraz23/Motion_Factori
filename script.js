@@ -7,9 +7,13 @@ const header = document.querySelector('header');
 window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
         header.style.backgroundColor = '#131313';
+        header.style.filter = 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.8))';
+        header.style.transition = 'background-color 0.3s ease, filter 0.3s ease';
     } 
     else {
         header.style.backgroundColor = 'transparent';
+        header.style.filter = 'none';
+        header.style.transition = 'background-color 0.3s ease, filter 0.3s ease';
     }
 });
 

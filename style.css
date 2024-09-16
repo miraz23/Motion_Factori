@@ -236,6 +236,8 @@ nav{
 
 .about{
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 50px;
 }
 
@@ -247,17 +249,17 @@ nav{
 }
 
 .about-title span{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .about-info{
     color: #9C9C9C;
     font-size: 23px;
-    padding: 40px 40px 0 0;
+    padding: 20px;
 }
 
-.about-video{
-    border: 15px solid #4C4D4A43;
+.about-video iframe{
+    border: 7px solid #4C4D4A43;
     border-radius: 5px; 
 }
 
