@@ -275,4 +275,29 @@ header{
     width: 300px;
 }
 
+/*----------------------------------------- speciality -----------------------------------------*/
+
+.speciality-title h1{
+    font-size: 35px;
+}
+
+.speciality-row{
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.speciality{
+    width: 350px;
+}
+
+.speciality-text h2{
+    font-size: 25px;
+}
+
+.speciality-text p{
+    font-size: 20px;
+}
+
 }
