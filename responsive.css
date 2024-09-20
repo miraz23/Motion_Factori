@@ -259,4 +259,20 @@ header{
 .process-info h3{
     font-size: 28px;
 }
+
+
+/*----------------------------------------- activity -----------------------------------------*/
+
+.activity-title h1{
+    font-size: 35px;
+}
+
+#activity .activity-row{
+    grid-template-columns: repeat(1, 0.2fr);
+}
+
+.activity{
+    width: 300px;
+}
+
 }
