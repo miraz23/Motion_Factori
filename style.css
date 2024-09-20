@@ -396,7 +396,7 @@ nav{
     display: flex;
     justify-content: center;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 10px;
     border: 1px solid #DBFA9B;
     background: #131313;
 }
@@ -450,7 +450,16 @@ nav{
 }
 
 .activity-title span{
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+#activity .activity-row{
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .activity{
@@ -465,16 +474,6 @@ nav{
     background-color: #DBFA9B;
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
-}
-
-#activity .row{
-    gap: 40px;
-    padding: 50px 0;
-    justify-content: center;
-}
-
-#activity .column{
-    gap: 40px;
 }
 
 .activity h2{
@@ -499,7 +498,7 @@ nav{
 }
 
 .speciality-title span{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .speciality-row{
@@ -513,6 +512,10 @@ nav{
 .speciality{
     width: 380px;
     height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #fff;
     border-radius: 20px;
 }
@@ -535,7 +538,6 @@ nav{
     align-items: center;
     background: #fff;
     border-radius: 100%;
-    margin: 50px 0px 0px 125px;
 }
 
 .speciality-icon svg{
@@ -544,7 +546,8 @@ nav{
 }
 
 .speciality-text{
-    padding: 40px 20px 20px 20px;
+    padding: 40px 20px;
+    height: 50%;
 }
 
 .speciality-text h2{
@@ -564,10 +567,6 @@ nav{
     margin: 100px 0px;
 }
 
-.price-title{
-    padding: 100px;
-}
-
 .price-title h1{
     text-align: center;
     font-size: 70px;
@@ -576,6 +575,7 @@ nav{
 .price-title p{
     font-size: 20px;
     text-align: center;
+    padding: 20px 100px 100px;
 }
 
 .price{
@@ -710,7 +710,7 @@ nav{
     font-size: 80px;
 }
 
-.faq-title h2{
+.faq-title .faq-book h2{
     font-size: 22px;
     font-weight: 600;
     padding: 70px 0 20px 0;
@@ -731,6 +731,10 @@ nav{
 
 .faq-title .faq-book button:hover{
     color: #DBFA9B;
+}
+
+.faq-book-mobile{
+    display: none;
 }
 
 .faq-item {

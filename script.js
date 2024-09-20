@@ -57,7 +57,7 @@ let lengthMultiplier;
 function updateProcessPosition() {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 768) {
+    if (screenWidth <= 430) {
         offsetMultiplier = 99.5;
         lengthMultiplier = 1;
     } 
@@ -153,8 +153,8 @@ function updateStrategyPosition() {
     const screenWidth = window.innerWidth;
     let offsetMultiplier;
 
-    if (screenWidth <= 768) {
-        offsetMultiplier = 360;
+    if (screenWidth <= 430) {
+        offsetMultiplier = 390;
     } 
     else {
         offsetMultiplier = 130;
