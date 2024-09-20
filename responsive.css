@@ -319,4 +319,83 @@ header{
     flex-direction: column;
 }
 
+
+/*----------------------------------------- faq -----------------------------------------*/
+
+
+#faq{
+    flex-direction: column;
+}
+
+.faq {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.faq-title h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.faq-book{
+    display: none;
+}
+
+.faq-book-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-book-mobile h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 70px 0 20px 0;
+    text-align: center;
+}
+
+.faq-book-mobile button{
+    color: #fff;
+    font-size: 22px;
+    background: #4C4D4A43;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    gap:8px;
+    align-items: center;
+    outline: none;
+}
+
+.faq-book-mobile button:hover{
+    color: #DBFA9B;
+}
+
+.faq-header h3{
+    font-size: 18px;
+}
+
+.faq-content p{
+    font-size: 16px;
+}
+
+
+/*----------------------------------------- footer -----------------------------------------*/
+
+.footer-link ul{
+    flex-direction: column;
+}
+
+.footer-copyright{
+    padding-top: 30px;
+}
+
+.footer-copyright p{
+    font-size: 10px;
+    margin: 0 -36px 0 -36px;
+    padding: 10px;
+    background: #2A2A28;
+}
+
 }
